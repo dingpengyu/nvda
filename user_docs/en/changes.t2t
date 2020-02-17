@@ -7,11 +7,13 @@ What's New in NVDA
 
 == New Features ==
 - The currently selected item in listboxes is again presented in browse mode in Chrome, similar to NVDA 2019.1. (#10713)
+- You can now perform right mouse clicks on touch devices by doing a one finger tap and hold. (#3886)
 
 
 == Changes ==
 - NVDA prevents the system from locking or going to sleep when in say all. (#10643)
 - Support for out-of-process iframes in Mozilla Firefox. (#10707)
+- Updated liblouis braille translator to version 3.12 (#10161)
 
 
 == Changes for Developers ==
@@ -37,6 +39,7 @@ What's New in NVDA
 - When installing add-on from add-ons manager names of files and folders in the browse window are no longer reported twice. (#10620, #2395)
 - In Firefox, when loading Mastodon with the advanced web interface enabled, all timelines now render correctly in browse mode. (#10776)
 - In browse mode, NVDA now reports "not checked" for unchecked check boxes where it sometimes didn't previously. (#10781)
+- ARIA switch controls no longer report confusing information such as "not pressed checked" or "pressed checked". (#9187)
 
 
 = 2019.3 =
