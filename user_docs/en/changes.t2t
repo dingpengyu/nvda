@@ -11,6 +11,8 @@ What's New in NVDA
 - Added script to open NVDA configuration directory (no default gesture). (#2214)
 - Better support for ESET antivirus GUI. (#10894)
 - Added support for Windows Terminal. (#10305)
+- Added a command to report the active configuration profile. (#9325)
+- Added a command to toggle reporting of subscripts and superscripts. (#10985)
 
 
 == Changes ==
@@ -27,9 +29,11 @@ What's New in NVDA
 == Changes For Developers ==
 - execElevated and hasUiAcces have moved from config module to systemUtils module. Usage via config module is deprecated. (#10493)
 - Updated configobj to 5.1.0dev commit f9a265c4. (#10939)
+- Automated testing of NVDA with Chrome and a HTML sample is now possible. (#10553)
 
 
 = 2020.1 =
+Highlights of this release include support for several new braille displays from HumanWare and APH, plus many other important bug fixes such as the ability to again read math in Microsoft Word using MathPlayer / MathType.
 
 == New Features ==
 - The currently selected item in listboxes is again presented in browse mode in Chrome, similar to NVDA 2019.1. (#10713)
@@ -41,7 +45,6 @@ What's New in NVDA
 - NVDA will prevent the system from locking or going to sleep when in say all. (#10643)
 - Support for out-of-process iframes in Mozilla Firefox. (#10707)
 - Updated liblouis braille translator to version 3.12. (#10161)
-- In Visual Studio Code Insiders, browse mode is now off by default as in Visual Studio Code stable. (#10858)
 
 
 == Bug Fixes ==
