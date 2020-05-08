@@ -89,7 +89,7 @@ Additionally, the following build time dependencies are included in Git submodul
 * [SCons](https://www.scons.org/), version 3.1.2
 * [Nulsoft Install System](https://nsis.sourceforge.io/Main_Page/), version 2.51
 * [NSIS UAC plug-in](https://nsis.sourceforge.io/UAC_plug-in), version 0.2.4, ansi
-* xgettext and msgfmt from [GNU gettext](https://sourceforge.net/projects/cppcms/files/boost_locale/gettext_for_windows/)
+* xgettext and msgfmt from [GNU gettext](https://github.com/mlocati/gettext-iconv-windows/)
 * [epydoc](http://epydoc.sourceforge.net/), version 3.0.1 with patch for bug #303
 * [Boost Optional (stand-alone header)](https://github.com/akrzemi1/Optional), from commit [3922965](https://github.com/akrzemi1/Optional/commit/3922965396fc455c6b1770374b9b4111799588a9)
 
