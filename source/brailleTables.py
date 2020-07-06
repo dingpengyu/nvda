@@ -7,6 +7,7 @@
 """
 
 import collections
+from locale import strxfrm
 
 #: The directory in which liblouis braille tables are located.
 TABLES_DIR = r"louis\tables"
@@ -55,7 +56,7 @@ def listTables():
 	@return: A list of braille tables.
 	@rtype: list of L{BrailleTable}
 	"""
-	return sorted(_tables.values(), key=lambda table: table.displayName)
+	return sorted(_tables.values(), key=lambda table: strxfrm(table.displayName))
 
 #: Maps old table names to new table names for tables renamed in newer versions of liblouis.
 RENAMED_TABLES = {
@@ -400,7 +401,10 @@ addTable("te-in-g1.utb", _("Telugu grade 1"))
 addTable("tr.ctb", _("Turkish grade 1"))
 # Translators: The name of a braille table displayed in the
 # braille settings dialog.
-addTable("uk.utb", _("Ukrainian"))
+addTable("uk.utb", _("Ukrainian grade 1"))
+# Translators: The name of a braille table displayed in the
+# braille settings dialog.
+addTable("uk-comp.utb", _("Ukrainian computer braille"))
 # Translators: The name of a braille table displayed in the
 # braille settings dialog.
 addTable("uz-g1.utb", _("Uzbek grade 1"))
